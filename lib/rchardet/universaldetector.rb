@@ -37,7 +37,7 @@ module CharDet
     attr_reader :done, :result
 
     def initialize
-      @highBitDetector = /[\x80-\xFF]/
+      @highBitDetector = Regexp.new '[\x80-\xFF]', nil ,'n'
       @escDetector = /(\033|\~\{)/
       @escCharSetProber = nil
       @charSetProbers = []
