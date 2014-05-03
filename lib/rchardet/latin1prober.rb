@@ -104,7 +104,7 @@ module CharDet
     end
 
     def get_charset_name
-      return "windows-1252"
+      return "Windows-1252"
     end
 
     def feed(aBuf)
